@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+Booking System Backend
+📌 Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a fullstack system for a caretaker booking platform, implementing booking lifecycle management and private dashboard-based chat between parents and caretakers.
 
-## Available Scripts
+🧠 Core Features
 
-In the project directory, you can run:
+Booking Lifecycle Management
 
-### `npm start`
+Pending → Accepted → Rejected / Completed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Automatic Chat Room Creation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Chat is created only after booking acceptance
 
-### `npm test`
+Linked with Booking ID, Parent ID, and Caretaker ID
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Private Dashboard-Based Chat
 
-### `npm run build`
+Text-only messages stored in database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Chat becomes read-only after booking completion or cancellation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Secure Access Control
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Chat available only inside authenticated dashboards
 
-### `npm run eject`
+No chat access via public profile pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Notification Logic
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Message badge/count for new messages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🛠 Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Node.js
 
-## Learn More
+Express.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MongoDB
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+REST APIs
 
-### Code Splitting
+MVC Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🗂 Database Design (Simplified)
 
-### Analyzing the Bundle Size
+Chat Collection
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+{
+  bookingId,
+  parentId,
+  caretakerId,
+  messages: [
+    {
+      sender,
+      text,
+      timestamp
+    }
+  ]
+}
 
-### Making a Progressive Web App
+🔐 Security & Best Practices
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+RESTful API design
 
-### Advanced Configuration
+Input validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Role-based access control
 
-### Deployment
+Scalable schema without real-time dependency (MVP-ready)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🚀 Status
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend completed and delivered to client.
