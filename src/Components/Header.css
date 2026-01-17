@@ -1,0 +1,88 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  background-color: #3e4a52;
+  width: 100%;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.navbar-logo { display: flex; align-items: center; gap: 10px; }
+.navbar-logo h1 {
+  color: #3ed0c7;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.logo-mark { color: #3ed0c7; font-size: 18px; }
+
+/* ===== NAV LINKS ===== */
+.navbar-links {
+  display: flex;
+  gap: 32px; /* add more space between menu names */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #00bfa5;
+}
+
+/* ===== AUTH BUTTONS ===== */
+.navbar-buttons {
+  display: flex;
+  gap: 18px; /* add more space between buttons */
+  margin-left: 24px; /* create clear separation from nav links */
+}
+
+.login-btn,
+.signup-btn {
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Login Button (outlined) */
+.login-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #91a0ac;
+}
+
+.login-btn:hover {
+  background-color: #ffffff;
+  color: #3d4b57;
+}
+
+/* Signup Button (filled) */
+.signup-btn {
+  background-color: #2fb0a6;
+  color: white;
+  border: none;
+}
+
+.signup-btn:hover {
+  background-color: #02a18d;
+}

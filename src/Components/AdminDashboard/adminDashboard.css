@@ -1,0 +1,20 @@
+/* adminDashboard.css - use your theme color #3e4a52 */
+.admin-wrap { display:flex; min-height: 120vh; background: linear-gradient(180deg, #2f3a40 0%, #3e4a52 100%); }
+.admin-sidebar { width: 220px; background: #2e3a3f; color: #fff; padding: 20px; }
+.admin-sidebar-header { font-weight:700; font-size:18px; margin-bottom:18px; color: #fff; }
+.admin-menu { list-style:none; padding:0; margin:0; }
+.admin-menu li { padding: 12px 10px; cursor:pointer; border-radius:8px; color:#dfe8e8; margin-bottom:8px; }
+.admin-menu li.active, .admin-menu li:hover { background:#3e4a52; color:#fff; }
+
+.admin-main { flex: 1; padding: 40px; color: #fff; }
+.admin-top h2 { margin:0 0 6px; color: #fff; }
+.admin-top p { margin:0 0 20px; color: #dfe8e8; }
+
+.user-list { background: rgba(255,255,255,0.04); padding: 16px; border-radius:12px; color:#fff; }
+.list-headers { display:flex; gap:16px; padding:10px 8px; font-weight:600; border-bottom:1px solid rgba(255,255,255,0.06); }
+.user-row { display:flex; gap:16px; align-items:center; padding:12px 8px; border-bottom:1px solid rgba(255,255,255,0.03); }
+.user-row .col { flex:1; }
+.user-row .col.actions { display:flex; gap:8px; flex:1.4; justify-content:flex-end; }
+.user-row button { background:#fff1; border:0; color:#fff; padding:6px 10px; border-radius:8px; cursor:pointer; }
+.user-row button.danger { background:#ff6b6b; }
+.loading, .empty { padding: 30px; text-align:center; color:#fff; }
