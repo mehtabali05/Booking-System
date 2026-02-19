@@ -7,7 +7,7 @@ This project is a fullstack system for a caretaker booking platform, implementin
 
 Booking Lifecycle Management
 
-Pending → Accepted → Rejected / Completed
+Pending → Accepted → Rejected / Canceled
 
 Automatic Chat Room Creation
 
